@@ -1,0 +1,46 @@
+<!--
+<h2>Inicio de sesión</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input type="email" formControlName="email" required placeholder="Correo">
+    <input type="password" formControlName="password" required placeholder="Contraseña">
+    <button type="submit">Iniciar sesión</button>
+</form>
+
+-->
+
+
+
+
+
+
+  <div class="container">
+    <div class="box">
+      <h2 class="title">Iniciar sesión</h2>
+
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input type="email" formControlName="email" placeholder="Correo" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <input type="password" formControlName="password" placeholder="Contraseña" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+      </form>
+
+      <div class="additional-links">
+        <p class="mb-0">
+          <a href="#0" class="link">¿Olvidaste tu contraseña?</a>
+        </p>
+        <p class="mb-0">
+          ¿Aún no formas parte de nuestra comunidad? <a routerLink="/registro" class="link">Regístrate aquí</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="login-bg-video">
+    <video src="/Registro_login-Proyecto/Registro-Login/Frontend/src/app/images/mixkit-forest-stream-in-the-sunlight-529.mp4" autoplay loop muted></video>
+  </div>
+  

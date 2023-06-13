@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .padre{
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #fff9f1;
+  }
+  .shopt{
+    display: flex;
+    justify-content:flex-end;
+    justify-content: space-between;
+  }
+  .shopt a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .menu__item{
+    padding: 10px;
+    border-left: solid 2px rgb(249, 203, 166); 
+    border-right: solid 2px rgb(249, 203, 166);
+  }
+  .menu li a{
+    text-decoration: none;
+    color: green;
+  }
+  
+  .container-tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    gap:17px
+    
+  
+  }
+  header{
+    margin-bottom: 30px;
+  }
+  .slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  .slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    
+    animation: cambio 20S infinite alternate;
+    animation-timing-function: ease-in;
+  }
+  .slider li{
+    list-style: none;
+    width: 100%;
+  }
+  .slider img{
+    width: 100%;
+  }
+  @keyframes cambio{
+    0% {margin-left: 0; }
+    20% {margin-left: 0; }
+  
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+  
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+  
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+  }
+  .conteiner-{
+    padding: 20px;
+    border: solid 2px rgb(249, 203, 166);;
+  }
+  .container-secciones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 200px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  .p{
+    text-align: center;
+  }
+  .box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .box h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  .cloths{
+
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap:wrap;
+  }
+  .cloths .prenda{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   gap: 20px;
+  }
+  .cloths .prenda img{
+    width: 100px;
+  }
+
+
+  

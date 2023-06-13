@@ -1,0 +1,45 @@
+<div class="padre">
+    <header class="main-">
+        <div class="container">
+            <div class="container-tittle">
+                <h1 class="main-title">DEFAULTH || MEMBERS</h1>
+                <nav class="menu">
+                    <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">CATEGORIES</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">FEATUES</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+                </nav>
+            </div>
+            <div class="shopt">
+                <button routerLink="/registro">Registro</button>
+                <a href="">My cart <img
+                        src="/img/shopping-cart-png-5a3a8fca5f1485.3449050215137873383895-removebg-preview.png"
+                        width="30px" height="30px" alt=""> </a>
+            </div>
+            <div class="user">
+                <input type="search"><img
+                    src="/img/png-transparent-computer-icons-desktop-search-for-desktop-wallpaper-black-and-white-symbol-thumbnail-removebg-preview.png"
+                    width="20px" height="20px" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="slider">
+        <ul>
+            <li><img src="/img/maxresdefault (1).jpg" alt=""></li>
+            <li><img src="/img/maxresdefault-1.jpg" alt=""></li>
+            <li><img src="/img/maxresdefault.jpg" alt=""></li>
+            <li><img src="/img/beige-el-color-de-moda-de-la-primavera-2021_a258ccb8_1280x720.jpg" alt=""></li>
+        </ul>
+        
+        <h1 class="p">Prendas</h1>
+        <section class="cloths">
+
+            <div *ngFor="let prenda of prendas" class="prenda">
+                <img [src]="prenda.url">
+                <h2>{{prenda.nombre}}</h2>
+                <p>{{prenda.precio}}</p>
+            </div>
+
+        </section>
+    </div>

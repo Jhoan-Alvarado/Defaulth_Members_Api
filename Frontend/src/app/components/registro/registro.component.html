@@ -1,0 +1,58 @@
+<!--
+<h2>Registro</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="name" placeholder="Nombre">
+    <input type="text" formControlName="email" placeholder="Correo">
+    <input type="text" formControlName="password" placeholder="Contraseña">
+    <button type="submit">Enviar</button>
+</form>
+-->
+<div class="container">
+    <div class="box">
+      <h2 class="title">Registro</h2>
+
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        
+        <div class="form-group">
+          <input type="text" formControlName="name" placeholder="Nombre" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <input type="tel" formControlName="name" placeholder="Telefono" class="form-control">
+        </div>
+
+        
+       
+        <div class="form-group">
+          <input type="text" formControlName="email" placeholder="Correo" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <input type="text" formControlName="password" placeholder="Contraseña" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <br>
+        <br>
+      </form>
+
+      <div class="additional-links">
+
+        <p class="mb-0">
+          ¿Ya tienes una cuenta? <a routerLink="/login" class="link">Inicia sesión aquí</a>
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="register-bg-animation">
+
+  </div>
+
+
+
+
+  
+
